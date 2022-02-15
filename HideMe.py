@@ -59,6 +59,7 @@ class HideME:
             return r.content
         else:
             print(r.status_code)
+            print(r.url)
 
     def get_page(self):
         content = self.get_connect(self.gen_url())
